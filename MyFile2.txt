@@ -1,0 +1,3 @@
+An apple is a fruit.
+An orange is a fruit.
+But an apple is not a banana.

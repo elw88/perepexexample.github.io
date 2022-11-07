@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+ <html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+     
+ <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" href="easy-responsive-tabs.css " />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|Lora">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/easyResponsiveTabs.js"></script>
+
+<title>Student Page</title> 
+<style type="text/css">
+
+.bg {
+  background-image: url("backgroundimage1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.topnav {
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav {
+  float: right;
+  color: black;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: grey;
+}
+
+/* Add a color to the active/current link */
+.topnav a.home {
+background-color: #ffffff;
+  color: #000000;
+}
+
+.topnav a.contact {
+background-color: #ffffff;
+  color: #000000;
+}
+
+.topnav a.about {
+background-color: #ffffff;
+  color: #000000;
+}
+
+#logo { 
+  float: left;
+  display: inline-block;
+  
+}
+
+/*buttons for inside tabs */
+.button {
+  background-color: #0000FF; /* Blue */
+  border: solid;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+
+/* stlye for vertical tabs */
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+
+/* Style for new horizontal/vertical tabs */ 
+     <style type="text/css" rel="stylesheet">
+        body {
+            background: white;
+        }
+        #container {
+            width: 1100px;
+            height: 700px;
+            margin: 0 auto;
+        }
+        @media only screen and (max-width: 768px) {
+            #container {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    
+    
+    /*Download Button for Reviews Tabs*/
+    /* Style buttons */
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            }
+
+/* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+            }
+    
+    
+    
+/*CSS for respond button text box*/
+    /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0000FF;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  bottom: -5px;
+  right: 0px;
+  width: 280px;
+    border-radius: 12px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: relative;
+  bottom: -20px;
+  right: 1px;
+  /*border: 3px solid #f1f1f1;*/
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #0066ff;
+  color: white;
+  padding: 6px 6px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #003d99;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*End of CSS for respond text box*/
+    
+   
+    /*CSS for test respond review 2*/
+#text {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #021652;
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 35px;
+  height: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+    #filename {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+    #download {
+  background-color: #3ba9f4;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+    
+  /* Respond review 3 */  
+#text2 {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #021652;
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 35px;
+  height: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+    #filename2 {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+    #download2 {
+  background-color: #3ba9f4;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+
+
+    
+    /*CSS for response box*/
+    
+    body{
+	font-family:verdana;
+}
+
+label{
+	font-weight:400;
+	margin:10px 0px;
+	display:block;
+	color:#003d99;
+}
+
+textarea{
+	border:1px solid #eeeeee;
+}
+
+input[type=submit]{
+	background:#0000FF;
+	border:1px solid #0000FF;
+	color:#ffffff;
+	height:30px;
+	display:block;
+	margin:10px 0px;
+}
+
+input[type=submit]:hover{
+	background:#0066ff;
+	border:1px solid #0066ff;
+	cursor:pointer;
+}
+
+.success-msg{
+	background:#003d99;
+	border:1px solid #003d99;
+	color:#ffffff;
+	width:33%;
+}
+    
+    
+</style> 
+
+<!-- link to css page -->
+ <link rel="stylesheet" type="text/css" href="Studentcss.css">
+
+
+
+</head> 
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="HomePage.html" class="w3-bar-item w3-button"class="pull-left"><img src="ppx logo1.png"> Perepex</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+        <a href="login.html" class="w3-bar-item w3-button">Student Login</a>
+    <a href="InstructorLogin.html" class="w3-bar-item w3-button">Instructor Login</a>
+        <a href="https://www.perepex.org/" class="w3-bar-item w3-button">About</a>
+        <a href="Contacts.html" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+     
+
+</br>
+</br>
+</br><div class="bg"> 
+<h1 align="center" style="color:#004fd6; font-size: 5em;
+  font-family: Arial;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px gray;">PEREPEX Student Console</h1>
+<?php 
+    echo "Hello " . $_SESSION["name"];
+?>
+
+ <div id="container">
+
+       
+        <hr>
+        <br/>
+        <br/>
+
+        
+        <br/>
+        <!--Horizontal Tab-->
+        <div id="parentHorizontalTab">
+            <ul class="resp-tabs-list hor_1">
+                <li>Current Assignments</li>
+                <li>Pending Reviews</li>
+                <li>Statistics</li>
+                <li>Class Information</li>
+            </ul>
+            <div class="resp-tabs-container hor_1">
+                <div>
+                    <p>
+                        <!--vertical Tabs for Current Assignment-->
+
+                        <div id="ChildVerticalTab_1">
+                            <ul class="resp-tabs-list ver_1">
+                            </ul>
+							
+                            <div class="resp-tabs-container ver_1">
+								
+                                <div>
+									
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                     <form action="" method="post" enctype="multipart/form-data" align="right">
+                                        Select a file to upload:
+                                        <input type="file" name="filename" id="fileToUpload">
+                                        <input type="hidden" name="assignmentId" value="<?php echo $assignmentId; ?>">
+                                        <input type="submit" value="Upload File" name="submitAssignment">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </p>
+                   <!--<p><button class="button button4">Respond</button>  </p>-->
+                </div>
+                
+
+                    <!--Vertical tabs pending reviews-->
+                    <div>
+                    
+                    <p>
+                        <!--vertical Tabs-->
+
+                        <div id="ChildVerticalTab_2">
+                            <ul class="resp-tabs-list ver_2">
+                                
+								?> <!-- close the php tag so we can show the assignments with HTML -->
+                                <li><?php echo $assignmentName?> </li>
+                               <!-- <li>Long name Responsive Tab 4</li>-->
+							   <?php }  //close the loop ?>
+                            </ul>
+                            <div class="resp-tabs-container ver_2">
+						
+								
+									
+								?> <!-- close the php tag so we can show the assignments with HTML -->
+                                <div>
+                                    
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    </br>
+                                    <a href ="download.php?fileID=<?php echo $row['fk_submission_id'] ?>"> <button class="btn" style="width:100%"><!--<i class="fa fa-download"></i>-->: Click to Download </button></a>
+                                        <button class="open-button" onclick="openForm()">Respond</button>
+                                            <div class="chat-popup" id="myForm">
+                                                <form class="form-container" method = "post">
+   <!-- <h1>Chat</h1>-->
+
+		<label>Response: 1</label>
+		
+		<div>
+			<textarea rows="10" cols="60" name="r" required></textarea>
+		</div>
+		<input type="hidden" value="<?php echo $row['response_id']?>" id="responseID" name ="responseID">
+		<input type="submit" name="submit" value="Submit">
+		
+	</form>
+                                            
+                                </div>
+                            </div>
+                                                        </div>
+                        </div>
+                    </p>
+                    <br>
+                    <br>
+                        <!--Respond Button-->
+                        
+                </div>
+                
+                        <!--Vertical Tabs Statistics-->
+                <div>
+                           <p>
+                        <!--vertical Tabs-->
+
+                        <div id="ChildVerticalTab_3">
+                            <ul class="resp-tabs-list ver_3">
+                                <li>Assignments</li>
+                                <li>Reviews</li>
+                                <li>Other</li>
+                                <!--<li>Performance Snapshot</li>-->
+                               <!-- <li>Long name Responsive Tab 4</li>-->
+                            </ul>
+                            <div class="resp-tabs-container ver_3">
+                                <div>
+
+
+<!-- Ok Button at Bottom -->
+<button style="height:50px;width:100px">Ok</button>
+</div>
+</html>

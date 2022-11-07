@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+<script>
+function download() {
+	$.ajax({
+		type: "POST",
+		url: "download.php',
+		data:{"dlFile": "A0001"},
+		success:function(html) {
+			alert(html);
+		}
+	});
+}	
+function download2() { //these could probably be one function that takes an argument but I'm not good with javascript
+	$.ajax({
+		type: "POST",
+		url: "download.php',
+		data:{"downloadFile": "A0002"},
+		success:function(html) {
+			alert(html);
+		}
+	});
+}	
+</script>
+
+</head>
+<body>
+<button onclick ="download()">Download File 1</button>
+<br>
+<br>
+<button onclick ="download2()">Download File 2</button>
+</body>
+</html>

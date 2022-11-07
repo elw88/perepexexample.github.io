@@ -1,0 +1,412 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+/* background image */
+.bg {
+  background-image: url("backgroundimage1.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+center h1 {
+  font-size: 8em;
+  font-family: "Arial";
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px black;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Arial";
+  letter-spacing: 5px;
+  text-shadow: 2px 2px 2px black;
+}
+
+p {
+  font-family: "Arial";
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 0px;
+}
+
+.logo-massaviu {
+  position: fixed;
+  padding: 0px;
+  background: transparent;
+  overflow: hidden;
+  z-index: 1;
+  width: 198px;
+}
+
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #002040;
+  overflow: auto;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+/* Navbar links */
+.navbar a {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #66B8FF;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #0080ff;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+
+  box-sizing: border-box;
+}
+
+
+.container {
+  position: center;
+  max-width: 800;
+  max-height: absolute;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 40px;
+}
+
+/*buttons for inside tabs */
+.button {
+  background-color: #008CBA; /* Blue */
+  border: solid;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button1 {border-radius: 2px;}
+.button2 {border-radius: 4px;}
+.button3 {border-radius: 8px;}
+.button4 {border-radius: 12px;}
+.button5 {border-radius: 50%;}
+
+  .button0 {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-right:700px;
+  margin-top: 00px;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+  border-radius: 4px;
+}
+
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}   
+
+/* Style for new horizontal/vertical tabs */ 
+        #container {
+            width: relative;
+            height: 600px;
+            margin: 10px;
+        }
+        @media only screen and (max-width: 768px) {
+            #container {
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+    
+    
+    /*Download Button for Reviews Tabs*/
+    /* Style buttons */
+        .btn {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            cursor: pointer;
+            font-size: 20px;
+            border-radius: 4px;
+            }
+
+/* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+            }
+    
+    /*CSS for respond button text box*/
+    /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #0000FF;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: relative;
+  bottom: -5px;
+  right: 0px;
+  width: 280px;
+    border-radius: 12px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: relative;
+  bottom: -20px;
+  right: 1px;
+  /*border: 3px solid #f1f1f1;*/
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 800px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #0066ff;
+  color: white;
+  padding: 6px 6px;
+  border: none;
+  cursor: pointer;
+  width: 25%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #003d99;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*End of CSS for respond text box*/
+    
+   
+    /*CSS for test respond review 2*/
+#text {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #021652;
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 35px;
+  height: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+    #filename {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+    #download {
+  background-color: #3ba9f4;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+    
+  /* Respond review 3 */  
+#text2 {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  color: #021652;
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  resize: none;
+  margin-bottom: 35px;
+  height: 200px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+    #filename2 {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+    #download2 {
+  background-color: #3ba9f4;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+
+
+    
+    /*CSS for response box*/
+    
+
+
+label{
+  font-weight:400;
+  margin:10px 0px;
+  display:block;
+  color:#003d99;
+}
+
+textarea{
+  border:1px solid #eeeeee;
+}
+
+input[type=submit]{
+  background:#d4d4d4;
+  border:1px solid #3b3b3b;
+  color:#ffffff;
+  height:30px;
+  display:block;
+  margin:10px 0px;
+    border-radius:4px;
+    color: black;
+}
+
+input[type=submit]:hover{
+  background:#adadad;
+  border:1px solid #3b3b3b;
+  cursor:pointer;
+}
+
+.success-msg{
+  background:#003d99;
+  border:1px solid #003d99;
+  color:#ffffff;
+  width:33%;
+}
+
+ p{text-align: center;
+   font-size: 1.5em;}
+
+   .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
